@@ -1,0 +1,14 @@
+[theme]
+# Color de fondo principal (Azul claro/pastel)
+backgroundColor = "#E6F5FF"
+
+# Color de fondo secundario (Un azul un poco más marcado)
+secondaryBackgroundColor = "#B3E0FF"
+
+# Color del texto (Azul muy oscuro, casi negro, para que resalte y se lea bien)
+textColor = "#002B5E"
+
+# Color de acento principal (Azul vibrante para los botones)
+primaryColor = "#0066CC"
+
+font = "sans serif"
