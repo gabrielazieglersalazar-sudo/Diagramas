@@ -51,8 +51,23 @@ except FileNotFoundError:
 
 st.markdown("---")
 
-# --- SECCIÓN 2: Simbología ---
-st.subheader("2. Hoja de Simbología")
+# --- SECCIÓN 2: DBP DE SERVICIOS ---
+st.subheader("2. Diagrama de Bloques de los Servicios")
+# Cambia este nombre por el nombre exacto de tu archivo PDF
+archivo_servicios = "Diagramas - Palencia,Paternina,Ziegler-DBS.drawio.pdf" 
+
+mostrar_pdf(archivo_servicios)
+
+try:
+    with open(archivo_servicios, "rb") as f:
+        st.download_button(label="📥 Descargar DBP de Servicios (Opcional)", data=f, file_name=archivo_servicios, mime="application/pdf", key="btn_servicios")
+except FileNotFoundError:
+    pass
+
+st.markdown("---")
+
+# --- SECCIÓN 3: Simbología ---
+st.subheader("3. Hoja de Simbología")
 archivo_simb = "HojaDeSimbologia.drawio.pdf"
 
 mostrar_pdf(archivo_simb)
@@ -65,8 +80,8 @@ except FileNotFoundError:
 
 st.markdown("---")
 
-# --- SECCIÓN 3: DFP ---
-st.subheader("3. Diagramas de Flujo de Procesos (DFP)")
+# --- SECCIÓN 4: DFP ---
+st.subheader("4. Diagramas de Flujo de Procesos (DFP)")
 archivo_dfp = "DFP FINAL.pdf"
 
 mostrar_pdf(archivo_dfp)
